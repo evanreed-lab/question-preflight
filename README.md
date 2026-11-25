@@ -1,6 +1,16 @@
 # 提问检查与澄清 · Question Preflight
 
-一个帮助 AI 理解日常提问和任务要求的 Agent Skill。遇到“帮我看看”“按刚才那个来”或“所以是它导致的吧”这类说法时，它会结合前文，判断是直接回答、分情况回答，还是只问一个会改变结果的问题。
+[English](#english)
+
+**刚开始用 AI，知道自己想做什么，却不确定怎么开口？** 《提问检查与澄清》主要面向刚开始用 AI、还在摸索怎么描述任务的使用者，尤其适合用 AI 改稿、整理信息或比较方案时试用。
+
+技能启用后，你可以用平时说话的方式提问。它会结合前文理解你的目标。意思已经清楚时，直接回答。几种理解都说得通时，可以分情况回答。如果选错方向会影响结果，它会问一个能决定下一步的问题。你也可以从这些追问里看出，下次主动说清哪一点能省掉来回确认。
+
+## 一个例子
+
+你贴了一份通知，说「帮我看看」。如果前文还没说清你要什么，AI 可以问「你想先听修改意见，还是希望我直接改一版？」你可以选一个，也可以补充自己的要求。
+
+下次有类似需求，你可以直接说「帮我看看这份通知。只指出最容易让读者误解的一处，并说明原因。先保留原文。」
 
 ## 下载与安装
 
@@ -18,9 +28,21 @@
 
 ## English
 
-Question Preflight is an Agent Skill for resolving ambiguity and evidence gaps in everyday prompts. It uses preceding context, answers directly when it can, and asks a focused question when choosing the wrong interpretation would materially change the result.
+**New to AI and unsure how to ask for what you need?** Question Preflight is an Agent Skill for people getting started with AI chat, especially when reviewing a draft, organizing information, or comparing options.
 
-Download `question-preflight.zip` from [Releases](https://github.com/evanreed-lab/question-preflight/releases/latest) and install it in your Agent Skills client. Automatic selection depends on your client. See the [skill instructions](SKILL.md) and [bilingual examples](references/guide-zh.md).
+Ask in your own words. The skill uses the conversation so far to understand what you want. If your request is clear, it answers directly. If several interpretations are plausible, it can give an answer for each. When choosing the wrong one would change the result, it asks a focused question. That question can show you what to mention up front next time.
+
+### Example
+
+You paste a draft announcement and say, “Can you take a look?” If the context leaves your goal open, the AI can ask, “Would you like feedback first, or should I rewrite it?” You can pick one or explain what you have in mind.
+
+Next time, you might ask, “Review this announcement. Point out the one thing readers are most likely to misunderstand, and explain why. Leave the draft as is for now.”
+
+### Install and share feedback
+
+Download `question-preflight.zip` from [Releases](https://github.com/evanreed-lab/question-preflight/releases/latest). In Codex, unzip it and move the `question-preflight` folder to your project's `.agents/skills/` or your own `~/.agents/skills/`. In Claude accounts with custom skills enabled, upload the ZIP under Customize → Skills. Automatic selection depends on your client. [Skill instructions](SKILL.md) · [Bilingual examples](references/guide-zh.md)
+
+If the AI guessed wrong, missed a question, or asked an unnecessary one, share an example with personal details removed. Include what you asked, what the AI did, and what you wanted it to do. [Open an issue](https://github.com/evanreed-lab/question-preflight/issues/new)
 
 ## License
 
