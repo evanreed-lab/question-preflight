@@ -1,4 +1,4 @@
 interface:
   display_name: "提问检查与澄清"
-  short_description: "回答前识别关键歧义与证据缺口，选择直接回答、条件回答或必要澄清"
-  default_prompt: "使用 $question-preflight 检查我的问题，能合理推进时直接回答，只有关键缺口才澄清。"
+  short_description: "帮 AI 新手把模糊请求变成可用结果：实质改写先亮新问法，缺信息给默认稿，必要时问 1～3 个关键问题"
+  default_prompt: "使用 $question-preflight 处理我的请求：实质改写问题先在开头说明，能做就按合理默认给结果，必要时问 1～3 个带选项的关键问题。"
